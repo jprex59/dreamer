@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: "Roboto Slab", serif !important;
+	min-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-color: #2e2f2f;
+	background-image: linear-gradient(to bottom, #2e2f2f, #d35400);
+}
