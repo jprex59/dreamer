@@ -26,6 +26,31 @@
 	z-index: 20;
 }
 
+.scrolling-text-container {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 45px;
+}
+
+.scrolling-text {
+	display: inline-block;
+	animation: scroll 15s linear infinite alternate;
+	width: 100%;
+	letter-spacing: 2px;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
 canvas {
 	height: 260px !important;
 }

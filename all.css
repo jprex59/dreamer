@@ -12,3 +12,10 @@ body {
 	overflow: hidden;
 	background: linear-gradient(to bottom, #fdb813, #ff7733, #ff1e34);
 }
+
+.footerOwn {
+	background-color: #4a1406;
+	width: 100%;
+	min-height: 150px;
+	padding: 25px;
+}
