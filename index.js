@@ -17,12 +17,3 @@ fetch("bdd.json")
 			document.querySelector(".music").appendChild(iframe);
 		});
 	});
-
-// For jQuery
-var myWave = $("#wave").wavify({
-	height: 1,
-	bones: 5,
-	amplitude: 20,
-	color: "#ffff",
-	speed: 0.25,
-});
