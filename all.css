@@ -11,6 +11,12 @@ body {
 	position: relative;
 	overflow: hidden;
 	background: linear-gradient(to bottom, #fdb813, #ff7733, #ff1e34);
+	color: #4a1406;
+}
+
+.title,
+p {
+	color: #4a1406;
 }
 
 .footerOwn {
@@ -18,4 +24,18 @@ body {
 	width: 100%;
 	min-height: 150px;
 	padding: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footerOwn ul {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+
+.footerOwn ul li {
+	color: #ffff;
+	margin: 15px;
 }

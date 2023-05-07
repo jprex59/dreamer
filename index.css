@@ -1,20 +1,24 @@
 .containerHome {
 	display: flex;
-	/*justify-content: center;*/
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
 	min-width: 100vw;
 	min-height: 100vh;
-	background-image: url("./img1.png");
-	background-position: 0 480px;
-	background-size: contain;
-	background-repeat: no-repeat;
+	position: relative;
+}
+
+.containerHome div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 #containerWave {
 	width: 100%;
-	height: 200px;
+	height: 250px;
 }
 
 #waves {
@@ -29,28 +33,114 @@
 .scrolling-text-container {
 	width: 100%;
 	overflow: hidden;
-	margin-top: 45px;
+	margin-top: 100px;
+	position: absolute;
+	bottom: 250px;
 }
 
 .scrolling-text {
 	display: inline-block;
-	animation: scroll 15s linear infinite alternate;
 	width: 100%;
 	letter-spacing: 2px;
+	font-size: 1.7em;
+	width: max-content;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
-@keyframes scroll {
+.waves {
+	width: 100%;
+	position: relative;
+	background-color: #3586ff;
+	position: absolute;
+	bottom: 0;
+}
+
+.waves .wave {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-size: 1200px 100px;
+}
+
+.waves .wave#wave1 {
+	background: url(wave.png);
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 3s linear infinite alternate-reverse;
+}
+.waves .wave#wave2 {
+	background: url(wave2.png);
+	z-index: 990;
+	opacity: 0.3;
+	bottom: 10px;
+	animation: animateWave_02 2.2s linear infinite alternate-reverse;
+}
+
+.waves .wave#wave3 {
+	background: url(wave3.png);
+	z-index: 999;
+	opacity: 1;
+	bottom: 0px;
+	animation: animateWave 2.2s linear infinite alternate-reverse;
+}
+
+.waves .wave#wave4 {
+	background: url(wave4.png);
+	z-index: 1010;
+	opacity: 0.6;
+	bottom: 20px;
+	animation: animateWave_02 3s linear infinite alternate-reverse;
+}
+
+@keyframes animateWave {
 	0% {
-		transform: translateX(0);
-	}
-	50% {
-		transform: translateX(100%);
+		background-position-x: 1000px;
 	}
 	100% {
-		transform: translateX(0);
+		background-position-x: 0px;
+	}
+}
+
+@keyframes animateWave_02 {
+	0% {
+		background-position-x: 0px;
+	}
+	100% {
+		background-position-x: 1000px;
 	}
 }
 
 canvas {
 	height: 260px !important;
+}
+
+@media all and (max-height: 1000px) {
+	#Hometitle {
+		position: absolute;
+		bottom: 400px;
+	}
+}
+
+@media all and (max-height: 700px) {
+	#Hometitle {
+		position: absolute;
+		bottom: 300px;
+	}
+	.scrolling-text-container {
+		bottom: 150px;
+	}
+}
+
+@media all and (max-height: 580px) {
+	#Hometitle {
+		position: absolute;
+		bottom: 180px;
+	}
+	.scrolling-text-container {
+		bottom: 120px;
+	}
 }

@@ -17,19 +17,19 @@ var waves = new SineWaves({
 
 	ease: "SineInOut",
 
-	wavesWidth: "50%",
+	wavesWidth: "40%",
 
 	waves: [
 		{
 			timeModifier: 2,
-			lineWidth: 4,
-			amplitude: -85,
+			lineWidth: 10,
+			amplitude: -100,
 			wavelength: 50,
 		},
 		{
 			timeModifier: 2,
-			lineWidth: 4,
-			amplitude: -85,
+			lineWidth: 10,
+			amplitude: -235,
 			wavelength: 30,
 		},
 	],
