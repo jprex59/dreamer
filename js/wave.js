@@ -38,7 +38,7 @@ var waves = new SineWaves({
 	resizeEvent: function () {
 		var gradient = this.ctx.createLinearGradient(0, 0, this.width, 0);
 		gradient.addColorStop(0, "rgba(255, 255, 255, 1)");
-		gradient.addColorStop(0.5, "rgba(255, 255, 255, 1)");
+		//gradient.addColorStop(0.5, "rgba(23, 210, 168, 0.2)");
 		//gradient.addColorStop(1, "rgba(23, 210, 168, 0.2)");
 
 		var index = -1;
